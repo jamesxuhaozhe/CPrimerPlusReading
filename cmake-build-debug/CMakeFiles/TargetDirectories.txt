@@ -1,0 +1,3 @@
+/Users/haozhexu/learn_workspace/CPrimerPlusReading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/haozhexu/learn_workspace/CPrimerPlusReading/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/haozhexu/learn_workspace/CPrimerPlusReading/cmake-build-debug/CMakeFiles/CPrimerPlusReading.dir
