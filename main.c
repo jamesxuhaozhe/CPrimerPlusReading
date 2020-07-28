@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <string.h>
-#define PI 3.14159
+#include <limits.h>
+#include <float.h>
+
 int main() {
-    float area, circum, radius;
-
-    printf("What is the radius of your pizza?\n");
-    scanf("%f", &radius);
-    area = PI * radius * radius;
-    circum = 2.0 * PI * radius;
-    printf("Your basic pizza parameters are as follows:\n");
-    printf("circumference = %1.2f, area = %1.2f\n", circum, area);
-
+    printf("Some number limits for this system:\n");
+    printf("Biggest int: %d\n", INT_MAX);
+    printf("Smallest long long: %lld\n", LLONG_MIN);
+    printf("One byte = %d bits on this system.\n", CHAR_BIT);
+    printf("Largest double: %e\n", DBL_MAX);
+    printf("Smallest normal float: %e\n", FLT_MIN);
+    printf("float precision = %d digits\n", FLT_DIG);
+    printf("float epsilon = %e\n", FLT_EPSILON);
     return 0;
 }
