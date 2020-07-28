@@ -1,10 +1,15 @@
 #include <stdio.h>
-
+#include <string.h>
+#define PI 3.14159
 int main() {
+    float area, circum, radius;
 
-    char ch;
-    printf("Please enter a character.\n");
-    scanf("%c", &ch);
-    printf("The code for %c is %d.\n", ch, ch);
+    printf("What is the radius of your pizza?\n");
+    scanf("%f", &radius);
+    area = PI * radius * radius;
+    circum = 2.0 * PI * radius;
+    printf("Your basic pizza parameters are as follows:\n");
+    printf("circumference = %1.2f, area = %1.2f\n", circum, area);
+
     return 0;
 }
