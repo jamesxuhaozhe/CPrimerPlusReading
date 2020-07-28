@@ -28,5 +28,14 @@ int main() {
     printf("integer division: 7/4 is %d \n", 7/4);
     printf("floating division: 7./4. is %1.2f \n", 7./4.);
     printf("mixed division: 7./4 is %1.2f \n", 7./4);
+
+    const int NUMBER = 22;
+    int countSec;
+
+    for (countSec = 1; countSec <= NUMBER; countSec++)
+    {
+        printf("Be my Valentine!\n");
+    }
+
     return 0;
 }
