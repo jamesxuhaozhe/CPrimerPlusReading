@@ -1,15 +1,26 @@
 #include <stdio.h>
-#include <limits.h>
-#include <float.h>
+#define SQUARES 64
 
 int main() {
-    printf("Some number limits for this system:\n");
-    printf("Biggest int: %d\n", INT_MAX);
-    printf("Smallest long long: %lld\n", LLONG_MIN);
-    printf("One byte = %d bits on this system.\n", CHAR_BIT);
-    printf("Largest double: %e\n", DBL_MAX);
-    printf("Smallest normal float: %e\n", FLT_MIN);
-    printf("float precision = %d digits\n", FLT_DIG);
-    printf("float epsilon = %e\n", FLT_EPSILON);
+    const double CROP = 2E16; // world wheat production in wheat grains
+    double current, total;
+    int count = 1;
+    printf("square grains total ");
+    printf("fraction of \n");
+    printf(" added grains ");
+    printf("world total\n");
+    total = current = 1.0; /* start with one grain */
+    printf("%4d %13.2e %12.2e %12.2e\n", count, current,
+           total, total/CROP);
+    while (count < SQUARES)
+    {
+        count = count + 1;
+        current = 2.0 * current;
+        /* double grains on next square */
+        total = total + current; /* update total */
+        printf("%4d %13.2e %12.2e %12.2e\n", count, current,
+               total, total/CROP);
+    }
+    printf("That's all.\n");
     return 0;
 }
