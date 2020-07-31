@@ -3,4 +3,4 @@ project(CPrimerPlusReading C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(CPrimerPlusReading main.c)
+add_executable(CPrimerPlusReading main.c interchange.h interchange.c)
