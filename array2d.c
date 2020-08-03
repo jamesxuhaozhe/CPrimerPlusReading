@@ -8,12 +8,12 @@ int sum2d(int (*arr)[COLS], int rows);
 
 int main(void)
 {
-    int junk[ROWS][COLS] = 
-    {
-        {2, 4, 6, 8},
-        {3, 5, 7, 9},
-        {12, 10, 8, 6}
-    };
+    int junk[ROWS][COLS] =
+        {
+            {2, 4, 6, 8},
+            {3, 5, 7, 9},
+            {12, 10, 8, 6}
+        };
 
     sum_rows(junk, ROWS);
     sum_cols(junk, ROWS);
@@ -53,7 +53,7 @@ void sum_cols(int arr[][COLS], int rows)
     }
 }
 
-int sum2d(int arr[][COLS], int rows) 
+int sum2d(int arr[][COLS], int rows)
 {
     int r;
     int c;
